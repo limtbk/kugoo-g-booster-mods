@@ -74,7 +74,7 @@ void loop() {
   else
     digitalWrite(LED_STROBE, LOW);  
 
-  if (s2 < 100) {
+  if (s2 > 100) {
     if ((tt / 8) % 2) {
       leftSnd(true);
       digitalWrite(LED_LEFT, HIGH);
@@ -87,7 +87,7 @@ void loop() {
       digitalWrite(LED_LEFT, LOW);  
   }
 
-  if (s3 < 100) {
+  if (s3 > 100) {
     if ((tt / 8) % 2) {
       rightSnd(true);
       digitalWrite(LED_RIGHT, HIGH);
